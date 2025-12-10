@@ -1,13 +1,112 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-		<!-- Your code goes here-->
+<html lang="en">
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container" id="box">
+        <!-- Instructions -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Instructions</h2>
+                </div>
+                <div class="modal-body">
+
+                    <p>
+                    <ol type="1" style="font-size: 18px;color:black">
+                        <li>Click on <b>SELECT</b> tab to start the simulation.</li>
+                        
+                    </ol>
+                    </p>
+
+                </div>
+                <div class="modal-footer">
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <!-- header -->
+        <header class="header">
+            <div class="tabs">
+
+                <!-- tabs -->
+                <div id="tab-1"  style="display: flex; border-right: 2px solid #F5F5F5; color: #FFC000;;" onclick="window.location.href = 'ID3.html'">
+                    <div class="tab-create" >
+                        <a class="tab-text" id="todecide" > SELECT</a>
+                    </div>                  
+                        <img id='createimg' src="images/select1.png" style="margin-top: 3px; margin-right: 10px; height: 85%;;" alt="" onclick="window.location.href = 'ID3.html'">
+
+                </div>
+
+                <div id="tab-2" style="display: flex; border-right: 2px solid #F5F5F5; color: #FFC000;cursor:not-allowed;">
+                    <div class="tab-create" style="cursor:not-allowed;">
+                       COMPUTE
+                    </div>
+                    <img src="images/calculator.png"
+                        style="margin-top: 3px; margin-right: 10px; height: 85%;cursor:not-allowed;" alt="">
+                </div>
+                <div id="tab-3"
+                    style="display: flex; border-right: 2px solid #F5F5F5; color: #FFC000; cursor:not-allowed;">
+                    <div class="tab-create" style="cursor:not-allowed;">
+                        VISUALIZE TREE
+                    </div>
+                    <img src="images/tree.png" style="margin-top: 3px; margin-right: 10px; height: 85%" alt="">
+
+                </div>
+            </div>
+            <a class="header-text" id="myBtn" style="padding-top: 8px" href="#">INSTRUCTIONS</a>
+        </header>
+        <body>
+            <div style="width:80%;margin-top: 2.3in; margin-left: 1in;">
+                <center>
+                    <p style="color:#333;font-size: 24px;text-align: justify;">
+                        Consider a table of data set. Given the column “Play Tennis” as target attribute, and example of days which such conditions as attributes: Outlook; Temperature; Humidity; and Wind. 
+                             We want to know what the best day to play tennis. To start click on the <b style="color:#004E86">SELECT</b> tab.  
+                         </p>
+                </center>
+                
+            
+        </div>
+
+        </body>
+
+
+
+
+        <!-- footer -->
+        <footer class="footer">
+            <span class="footer-text">© 2025 Virtual Labs, IIT Roorkee</span>
+        </footer>
+
+    </div>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script>
+    <script>
+   
+        
+        const pageAccessedByReload = (
+  (window.performance.navigation && window.performance.navigation.type === 1) ||
+    window.performance
+      .getEntriesByType('navigation')
+      .map((nav) => nav.type)
+      .includes('reload')
+);
+if(pageAccessedByReload==true){
+    window.location.href="index.html"
+}</script>
+
 </body>
+
 </html>

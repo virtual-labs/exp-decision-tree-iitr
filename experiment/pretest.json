@@ -1,39 +1,52 @@
-{
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
+[
+  {
+    "question": "What is a decision tree?",
+    "answers": {
+      "a": "A graphical representation of decisions and their possible consequences",
+      "b": "A data structure used for storing hierarchical decision rules",
+      "c": "A machine learning algorithm used for classification and regression",
+      "d": "All of the above"
     },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
-}
+    "correctAnswer": "d"
+  },
+  {
+    "question": "Decision trees are a type of:",
+    "answers": {
+      "a": "Supervised learning algorithm",
+      "b": "Unsupervised learning algorithm",
+      "c": "Semi-supervised learning algorithm",
+      "d": "Reinforcement learning algorithm"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "What does ID3 stand for in the context of machine learning?",
+    "answers": {
+      "a": "Iterative Dichotomiser 3",
+      "b": "Intelligent Decision 3",
+      "c": "Iterative Decision 3",
+      "d": "Inductive Decision 3"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "ID3 algorithm uses which approach for decision tree construction?",
+    "answers": {
+      "a": "Greedy Approach",
+      "b": "Random Approach",
+      "c": "Evolutionary Approach",
+      "d": "Monte Carlo Approach"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Which of the following is not a step in building a decision tree?",
+    "answers": {
+      "a": "Splitting",
+      "b": "Pruning",
+      "c": "Merging",
+      "d": "Root node selection"
+    },
+    "correctAnswer": "c"
+  }
+]
