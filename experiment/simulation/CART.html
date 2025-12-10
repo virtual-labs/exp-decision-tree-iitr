@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+    <div class="container" id="box">
+        <!-- Instructions -->
+        <div id="myModal" class="modal" style="padding-top: 30px;height: 600px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Instructions</h2>
+                </div>
+                <div class="modal-body">
+
+                    <p>
+                        <ol type="1" style="font-size: 18px; text-align: justify;color:black">
+                            <li>Choose a value for each attribute in the <b>TRAINING DATASET</b> using the dropdown menus, and then click the <b>ADD</b> button to input these values into the table.</li>
+                            <li>Repeat step 1 until you have a total of 10 rows.</li>
+                            <li>Now, provide a value for each attribute in the <b>TESTING DATASET</b> and then click the <b>ADD</b> button.</li>
+                          <li>Now, click on the <b>NEXT</b> button to initiate the computation phase for the Naive Bayes model.</li>
+                            <li>Please enter the correct number of occurrences for the <b>YES</b> and <b>NO</b> fields based on the <b>OBSERVATION</b> table and click on <b>SUBMIT</b> button.</li>
+                            <li>Now, click on <b>NEXT</b> button to calculate <b>LIKELIHOOD PROBABILITY</b>.</li>
+                            <li>Enter the occurrences of each attribute based on their classes in the <b>YES</b> column of the <b>CALCULATION</b> table, and then click the <b>SUBMIT</b> button.</li>
+                            <li>Repeat step 7 for <b>NO</b> column and click on <b>NEXT</b> button.</li>
+                            <li>If, zero values are present for any likelihood probability, <b>Laplace Smoothing</b> section appear.</li>
+                            <li>Else, calculate the <b>POSTERIOR PROBABILITIES</b> by entering the required fields for <b>P(YES|NEW INSTANCE)</b> and then click on the <b>SUBMIT</b> button.</li>
+                            <li>Repeat the above step for finding <b>P(NO|NEW INSTANCE)</b>.</li>
+                            <li>After submitting their values click on <b>NEXT</b> button to know the final result.</li>
+                        </ol>
+                        
+                        </p>
+
+                </div>
+                <div class="modal-footer">
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <!-- header -->
+        <header class="header">
+            <div class="tabs">
+                <!-- tabs -->
+                <div id="tab-1"
+                style="display: flex; border-right: 2px solid #F5F5F5; background-color: #ffd964;
+               cursor:not-allowed; border-top-left-radius: 10px;">
+                <div class="tab-create" style="background-color: #ffd964;cursor:not-allowed;border-top-left-radius: 10px;">
+                    <a  class="tab-text" style="color: #004E86;font-weight: bold;cursor:not-allowed;"> CREATE</a>
+                </div>
+                <img src="images/create1.png" style="margin-top: 3px; margin-right: 10px; height: 85%" alt="">
+
+            </div>
+                <div id="tab-2" style="display: flex; border-right: 2px solid #F5F5F5; color: white;cursor:not-allowed;">
+                    <div class="tab-create" style="cursor:not-allowed;">
+
+                        COMPUTE
+                    </div>
+                    <img src="images/calculator.png"
+                        style="margin-top: 3px; margin-right: 10px; height: 85%;cursor:not-allowed;" id="calImg" alt="">
+                </div>
+                <div id="tab-3"
+                    style="display: flex; border-right: 2px solid #F5F5F5; color: white; cursor:not-allowed;">
+                    <div class="tab-create" style="cursor:not-allowed;">
+                        ANALYZE
+                    </div>
+                    <img src="images/analyse.png" style="margin-top: 3px; margin-right: 10px; height: 85%" alt="">
+
+                </div>
+            </div>
+            <a class="header-text" id="myBtn" style="padding-top: 8px" href="#">INSTRUCTIONS</a>
+        </header>
+
+        <div class="sec-con-container">
+            <div class="sec-con-column">
+                <!-- controls -->
+                <div class="training-left-side-container">
+                    <div class="sub-div-control" id="training-control" style="width:97%">
+                        <header id="trainToTest" class="header-box">DATASET ATTRIBUTE</header>
+                        <div class="control-panel">
+                            <div class="Data-set-x-value-input-container">
+                                <b>CGPA</b>  <span style="position: relative;
+                                ">:</span> 
+                                <select class="input-control" id="cgpa" style="width: 128px;position: relative;
+                                left: 8px;">
+                                    <option value='NULL'>NULL</option>
+                                    <option value=">=9">>=9</option>
+                                    <option value=">=8">>=8</option>
+                                    <option value="<8"><8</option>
+                                </select>
+                            </div>
+                            <div class="Data-set-x-value-input-container">
+                                <b>INTERACTIVE</b>  <span style="position: relative;
+                                    left: 8px;">:</span> 
+                                <select class="input-control" id="interactive" style="width: 128px;">
+                                    <option value='NULL'>NULL</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                            <div class="Data-set-x-value-input-container">
+                               <b style="width:100px">PRACTICAL KNOWLEDGE</b>  <span style="position: relative;
+                              left: -1px;">:</span> 
+                                <select class="input-control" id="practical" style="width: 128px;position: relative;">
+                                    <option value='NULL'>NULL</option>
+                                    <option value="Very Good">Very Good</option>
+                                    <option value="Good">Good</option>
+                                    <option value="Average">Average</option>
+                                </select>
+                            </div>
+                            <div class="Data-set-x-value-input-container">
+                                <b>COMM. SKILL</b>  <span style="position: relative;
+                                left: -3px;">:</span>
+                                <select class="input-control" id="comm" style="width: 128px;    position: relative;">
+                                    <option value='NULL'>NULL</option>
+                                    <option value='Good'>Good</option>
+                                    <option val="Moderate">Moderate</option>
+                                    <option val="Poor">Poor</option>
+                                </select>
+                            </div>
+
+                                <div id=target class="Data-set-x-value-input-container">
+                                    <b>JOB OFFER</b>  <span style="position: relative;
+                                    left: -3px;">:</span>
+                                    <select class="input-control" id="job" style="width: 128px;    position: relative;left:2px">
+                                        <option value='NULL'>NULL</option>
+                                        <option value='Yes'>Yes</option>
+                                        <option val="No">No</option>
+                                    </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control-panel-button-container">
+                        <button id="add-button" onclick="populateDataPointsTable()"
+                             style="margin-left: 3px;">ADD</button>
+                        <button  id='reset' title="clear the inserted data." disabled onclick="window.location.href='CART.html'"
+                            style="margin-left: 3px;">RESET</button>
+                            <button id="NEXT" onclick="window.location.href='cartcomp.html'" disabled = true ; style="margin-left: 3px;">NEXT</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- table -->
+            <div class="sec-con-table" style="width: 95%;">
+                <div class="sub-div-table">
+                    <header class="header-box">OBSERVATION TABLE</header>
+                    <div id="tablesContainer" >
+                        <table id="dataPointsTable">
+                            <thead>
+                                <tr style="background-color: #d8e9f0;">
+                                    <th>S.No</th>
+                                    <th>CGPA</th>
+                                    <th>INTERACTIVE</th>
+                                    <th>PRACTICAL KNOWLEDGE</th>
+                                    <th>COMM. SKILL</th>
+                                    <th>JOB OFFER</th>
+                                    <th class="tobedeleated">DELETE</th>
+                                    
+                                </tr>
+                            </thead>
+                            <tbody id="for11">
+                                <!-- Data point coordinates will be dynamically populated here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="footer">
+            <span class="footer-text">© 2025 Virtual Labs, IIT Roorkee</span>
+        </footer>
+        
+        <script src="js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"> </script>
+        <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script>const pageAccessedByReload = (
+            (window.performance.navigation && window.performance.navigation.type === 1) ||
+              window.performance
+                .getEntriesByType('navigation')
+                .map((nav) => nav.type)
+                .includes('reload')
+          );
+          if(pageAccessedByReload==true){
+              window.location.href="index.html"
+          }
+          </script>
+    </div>
+
+</body>
+
+</html>

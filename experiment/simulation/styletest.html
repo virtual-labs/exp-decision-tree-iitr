@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styletest.css" />
+    <link rel="stylesheet" href="css/Treant.css">
+	<!--link rel="stylesheet" href="super-simple.css"-->
+
+</head>
+
+<body>
+    <div class="container" id="box">
+        <!-- Instructions -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Instructions</h2>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <ol type="1" style="font-size: 18px; text-align: justify">
+                            <li>Now, find the entropy of the whole dataset by entering the required values (total Yes and total No) and click on the <b style="color:#004E86">SUBMIT</b> button.</li>
+                            <li>Repeat step 1 to find entropy for every individual attribute value.</li>
+                            <li>Click on the <b style="color:#004E86">NEXT</b> button.</li>
+                            <li>Now, find the information gain for the first attribute i.e., Outlook.
+                                <ol type="a">
+                                    <li>Enter the required values.</li>
+                                    <li>To access the value of entropy of the dataset (H(D)) and value of attribute (H(Dᵥ)), click on the tabs given on the left side.</li>
+                                <li>Click on the <b style="color:#004E86">SUBMIT</b> button to get the gain value.</li>
+                                <li>Repeat step 4 to find the information gain for the other attributes (temperature, humidity and wind).</li>
+                                </ol>
+                                <b>NOTE:</b>The attribute having highest Gain value is selected as the ROOT node for the decision tree.
+                            </li>
+                        
+                          <li>Click on the <b style="color:#004E86">NEXT</b> button to compute the tree.</li>
+                          <li>Now, find the entropy for the 'leaf' node (which has both YES and NO examples) of the tree by entering the required values and then clicking on the <b  style="color:#004E86">SUBMIT</b> button.</li>
+                          <li>Now, find the entropy for every individual attribute value by clicking on the <b style="color:#004E86">ENTROPY</b> button.</li>
+                          <li>Now, find the information gain for every attribute by clicking on the <b  style="color:#004E86">IG</b> button.</li>
+                          <li>Click on the <b style="color:#004E86">NEXT</b> button.</li>
+                          <li>Repeat steps 6 to 9 until we get the final decision tree.</li>
+                          <li>Finally, click on the <b style="color:#004E86">PLOT</b> button.</li>
+                      </ol>
+                      <b>NOTE:</b> Read the alerts properly.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <!-- header -->
+        <header class="header">
+            <div class="tabs">
+                <!-- tabs -->
+                <div id="tab-1"
+                    style="display: flex; border-right: 2px solid #F5F5F5; color: #FFC000; cursor:not-allowed;">
+                    <div class="tab-create" style="cursor:not-allowed;">
+                        SELECT
+                    </div>
+                    <img src="images/select1.png" style="margin-top: 3px; margin-right: 10px; height: 85%" alt="">
+
+                </div>
+                <div id="tab-2" style="display: flex; border-right: 2px solid #F5F5F5; color: #004E86;background-color: #ffd964;font-weight: bold;cursor:not-allowed;">
+                    <div class="tab-create" style="cursor:not-allowed;">
+
+                       COMPUTE
+                    </div>
+                    <img id="calimg" src="images/calculator1.png"
+                        style="margin-top: 3px; margin-right: 10px; height: 85%;cursor:not-allowed;" id="calImg" alt="">
+                </div>
+                <div id="tab-3"
+                    style="display: flex; border-right: 2px solid #F5F5F5; color: #FFC000; cursor:not-allowed;">
+                    <div class="tab-create" style="cursor:not-allowed;">
+                        VISUALIZE TREE
+                    </div>
+                    <img id="anaimg" src="images/tree.png" style="margin-top: 3px; margin-right: 10px; height: 85%" alt="">
+
+                </div>
+            </div>
+            <a class="header-text" id="myBtn" style="padding-top: 8px" href="#">INSTRUCTIONS</a>
+        </header>
+
+     
+        <div class="sec-con-container" id="finalshow" style="display: none;">
+            <div class="sec-con-column" id="finale1"></div>
+            <div class="sec-con-table" id="finale2"></div>
+    
+            <div id=retb style="display: none;">
+                <button id='plot' class="button" onclick="toPlot()">PLOT</button>
+                <button id=print class="button" disabled onclick="window.print()">PRINT</button></div>
+        </div>
+        
+
+        <div class="sec-con-container" id="cont">
+            <div class="sec-con-column" id=finalhide>
+                <!-- controls -->
+                <div class="training-left-side-container">
+                    <div class="sub-div-control" id="training-control">
+                        <header id="trainToTest" class="header-box">DATASET</header>
+                        <div id="tablesContainer">
+                            <table id="dataPointsTable" style="height : 419.5px">
+                
+                                    <tr style="background-color: #d8e9f0;">
+                                        <th>S. No.</th>
+                                        <th>OUTLOOK</th>
+                                        <th>TEMPERATURE</th>
+                                    <th>HUMIDITY</th>
+                                    <th>WIND</th>
+                                    <th>PLAY TENNIS</th>       
+                                    </tr>
+                              
+                            
+                            </table>
+                            <table id="secondtable" style="display:  none;">
+                                <tr  style="  background-color: #e5f5fe;color:black">
+                                    <td><b>ATTRIBUTE </td></b></td>
+                                    <td><b>VALUE </b></td>     
+                                    <td><b>ENTROPY</b></td>
+                                    </tr>
+                                    <tr><td id="outid">OUTLOOK</td></tr>
+                                    <tr><td id="tempid">TEMPERATURE</td></tr>
+                                        <tr><td id="humdid">HUMIDITY</td></tr>
+                                        <tr><td id="windid">WIND</td></tr>     
+                            </table>
+
+                            <table id="totalValueTable" style="display:  none;">
+                                <tr  style="  background-color: #e5f5fe;color:black">
+                                    <td><b>ATTRIBUTE </td></b></td>
+                                    <td><b>VALUE </b></td>     
+                                    <td>  <b>TOTAL </b></td>
+                                    </tr>
+                                    <tr><td id="outid2">OUTLOOK</td></tr>
+                                    <tr><td id="tempid2">TEMPERATURE</td></tr>
+                                        <tr><td id="humdid2" >HUMIDITY</td></tr>
+                                        <tr><td id="windid2">WIND</td></tr>        
+                            </table>
+
+                            <table id="gaintable2" style="display:  none;width:60%;margin: auto;margin-top: 100px;">
+                                <thead>
+                                    <tr  style="  background-color: #e5f5fe;color:black">
+                                        <th>S. No.</th>
+                                            <th>ATTRIBUTE</th>
+                                            <th>INFO. GAIN</th>
+                                      </tr>
+                                </thead>
+                                <tbody>
+    
+                                </tbody>           
+                       </table>
+
+                       <table id="copiedTable" style="display: none;margin-top: 50px;
+                       position: absolute;
+                       margin-left: 50px;">
+                </table>
+                
+                       
+                        </div>
+                        <div id="divcedshow" style="display: none;flex-direction: row; justify-content: space-around; margin-top: 5px;">
+                            <div class="wrapper" id="wtab">
+                                <input class="radio" id="one" name="group" type="radio" onclick="addEntropyValue()">
+                                <input class="radio" id="two" name="group" type="radio" onclick="addEntropyTable()">
+                                <input class="radio" id="three" name="group" type="radio" onclick="addtotalset()">
+                            
+                          
+                                <div class="tabuler">
+                                    <label class="tab" id="one-tab" for="one">ENTROPY H(D)</label>
+                                    <label class="tab" id="two-tab" for="two">ENTROPY H(Dᵥ)</label>
+                                    <label class="tab" id="three-tab" for="three">DATASET</label>
+                
+                                </div>
+                                
+                            </div>
+
+                            <div class="wrapper3" id="wtab3" style="display: none;margin-top: -215px;margin-left:-170px">
+                                <input class="radio" id="one2" name="group" type="radio" onclick="addIGValue()">
+                                <input class="radio" id="two2" name="group" type="radio" onclick="adddataset()">
+                            
+                          
+                                <div class="tabuler2">
+                                    <label class="tab" id="one2-tab" for="one2">INFORMATION GAIN</label>
+                                    <label class="tab" id="two2-tab" for="two2">DATASET</label>
+                
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div id="divcshow" style="display: none; align-items: center; justify-content: center; height: 360px; margin:0 auto; flex-direction: column;">
+                        </div>
+
+                    </div>
+                    <div class="sub-div-formula">
+                        <header class="header-box" style="position: sticky;  top: 0">FORMULAE</header>
+                        <div style="display: flex; flex-direction: row;">
+                            
+                            <div class="wrapper2">
+                                <input   class="radio" id="five" name="group" type="radio" onclick="entropyf()">
+                                <input   class="radio" id="six"  name="group" type="radio" onclick="gainf()">
+                               
+                       <div class="tabuler2">
+                                <label class="tab2" id="five-tab" for="five" style="width: 70%; margin-top: 2px;">Entropy</label>
+                                <label class="tab2" id="six-tab" for="six" style="width: 70%;margin-top: 2px;">Information Gain</label>
+           
+                            
+                        </div>
+                    </div>
+                            <div id="forformule" style="display: flex; align-items: center; justify-content: center; margin:0 auto; height: 160px; flex-direction: column;width: 80%;">
+
+                            </div>
+                  
+                        </div>
+                    </diV>
+                    
+                </div>
+            </div>
+
+            <!-- table -->
+            <div class="sec-con-table" id=finalhide2>
+                <div class="sub-div-table" id="fortarget">
+                    <header id=calculation class="header-box">ENTROPY</header>
+                    <div id="divte" style="display: none;font-size: larger;"></div>
+                    <div id="firsttable" style=" height: fit-content; position: relative; margin-top: 150px; font-size: larger;">
+                        <div id=fidel style="position: absolute; top: -100px; margin-left: 120px;"></div>
+                        <div id="result" style="margin-left: 10px;width:480px;margin-top: -70px;position: absolute;color:#004E86"></div>
+                        
+                        <div id=addind style="margin-left: 10px; width: 480px;color:#004E86">
+                            <math style="font-weight: bold; font-size: 22px; ">
+                                <mn id="heading">H(D) = </mn>
+                             
+                                <mo id="sub_op">-</mo>
+                                <mrow id="input-value1">
+                                    <mfrac>
+                                        <mrow>
+                                            <mn><input max="7" min="0" type="number" id="pos1" placeholder="Y" style="width: 35px;text-align: center;"/> </mn>
+                                        </mrow>
+                        
+                                        <mi class="totals" style="display:block"></mi>
+                                    </mfrac>
+                                    <mn style="margin-left:4px">log₂</mn>
+                                    <mfrac>
+                                        <mrow>
+                                            <mn><input max="7" min="0" type="number" id="pos2" placeholder="Y" style="width: 35px;text-align: center;"/></mn>
+                                        </mrow>
+                        
+                                        <mi class="totals" style="display:block"></mi>
+                                    </mfrac>
+                                    <mo>-</mo>
+                                    <mfrac>
+                                        <mrow>
+                                            <mn> <input max="7" min="0" type="number" id="neg1" placeholder="N" style="width: 35px;text-align: center;"/></mn>
+                                        </mrow>
+                        
+                                        <mi class="totals" style="display:block"></mi>
+                                    </mfrac>
+                                    <mn style="margin-left:4px">log₂</mn>
+                                    <mfrac>
+                                        <mrow>
+                                            <mn> <input max="7" min="0" type="number" id="neg2" placeholder="N" style="width: 35px;text-align: center;"/></mn>
+                                        </mrow>
+                        
+                                        <mi class="totals" style="display:block"></mi>
+                                    </mfrac>
+                                </mrow>
+                               
+                    
+                            </math>
+
+
+                        </div>
+
+                        <div id="IG_id" style="margin-left: 10px; width: 200px;display:none;color:#004E86">
+                            <math style="font-weight: bold; font-size: 20px; ">
+                                <mn id="heading2">gain(D,Out.) =  </mn>
+                             
+                            
+                                <mrow id="input-value" style="margin-left:5px">
+                                    <mrow>
+                                        <mn><input max="7" min="0" type="number" id="totalE" placeholder="H(D)" style="width: 45px;text-align: center;"/> </mn>
+                                        <mo>-</mo>
+                                    </mrow>
+                                    <mrow id="h1">
+                                        <mfrac style="font-size:30px">
+                                            <mrow>
+                                                <mn id="total_V11"> </mn>
+                                            </mrow>
+                            
+                                            <mi class="totalsIG" style="display:block"></mi>
+                                        </mfrac>
+                                        <mo>*</mo>
+                                        <mn ><input max="7" min="0" type="number" id="total_V12" placeholder="H(S)" style="width: 45px;text-align: center;"/></mn>
+                                    </mrow>
+                                   
+                                    <mrow id="h2">
+                                        <mo style="margin-left:5px">-</mo>
+                                        <mfrac style="font-size:30px;margin-left:5px">
+                                            <mrow>
+                                                <mn id="total_V21"></mn>
+                                            </mrow>
+                            
+                                            <mi class="totalsIG" style="display:block"></mi>
+                                        </mfrac>
+                                        <mo>*</mo>
+                                        <mn><input max="7" min="0" type="number" id="total_V22" placeholder="H(O)" style="width: 45px;text-align: center;"/></mn>
+                                    </mrow>
+                               
+                                    <mrow id="h3" style="    position: absolute;margin-top: 62px;">
+                                        <mo>-</mo>
+                                        <mfrac style="font-size:30px;margin-left:5px">
+                                            <mrow>
+                                                <mn id="total_V31"></mn>
+                                            </mrow>
+                            
+                                            <mi class="totalsIG" style="display:block"></mi>
+                                        </mfrac>
+                                        <mo>*</mo>
+                                        <mn><input max="7" min="0" type="number" id="total_V32" placeholder="H(R)" style="width: 45px;text-align: center;"/></mn>
+                                    </mrow>
+                    
+                            </math>
+
+                           
+
+                        </div>
+                        <table id="gaintable" style="display:  none;width:60%;margin: auto;margin-top: 100px;">
+                            <thead>
+                                <tr  style="  background-color: #e5f5fe;color:black">
+                                    <th>S. No.</th>
+                                        <th>ATTRIBUTE</th>
+                                        <th>INFO. GAIN</th>
+                                  </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                           
+                   </table>
+
+                   <table id="copiedTable2" style="display: none;">
+                    <tr  style="  background-color: #e5f5fe;color:black">
+                        <td><b>ATTRIBUTE</td></b></td>
+                        <td><b>VALUE</b></td>     
+                        <td><b>ENTROPY</b></td>
+                        <td><b>GAIN</b></td>
+                        </tr>
+                        <tr><td id="v1"></td></tr>
+                        <tr><td id="v2"></td></tr>
+                        <tr><td id="v3"></td></tr>
+                       
+                </table>
+                
+                </div>
+
+                    <div class="chart" id="OrganiseChart-simple" style="display: none;margin-top:-140px;"></div>
+                  
+                </div>
+                <div id="hidediv1" style="position:absolute;bottom: 50px; right: 50px; display: flex; justify-content: space-between; flex-direction: column; height: 180px;">
+                <div><button id=submittotable class="button" onclick="tosubmitadd()">SUBMIT</button></div>
+                <div><button disabled=true id=nexttotable class="button" onclick="tonextIG()">NEXT</button></div>
+                <div><button id=resettable title="Reset the inputted value." class="button" onclick="toreset()">RESET</button></div>
+            </div> 
+            <div id="showdiv1" style="position:absolute;bottom: 50px; right: 50px; display: none; justify-content: space-between; flex-direction: column; height: 180px;">
+                <div><button id=submitIG class="button" onclick="submitIGValue()">SUBMIT</button></div>     
+                <div><button id="nextbt" disabled=true class="button" onclick="tonextIG2()">NEXT</button></div>
+                <div><button id=resetIGtable class="button" title="Reset the IG." onclick="toreset_2()">RESET</button></div>
+            </div> 
+            <div id="showdiv2" style="position:absolute;bottom: 50px; right: 50px; display: none; justify-content: space-between; flex-direction: column; height: 180px;">
+                <div id="b1"><button id="finds" class="button" onclick="findS()">SUBMIT</button></div>
+                <div id="b2" style="display:none"><button id="finde" class="button" onclick="findEntropy()">ENTROPY</button></div>
+                <div id="b3" style="display:none"><button id="findg" class="button" onclick="findgain()" disabled>IG</button></div>
+                <div><button id="nextbt2" disabled=true class="button" onclick="tonextIG3()">NEXT</button></div>
+                <div id="b4"><button id="reset3" class="button" onclick="toreset3()">RESET</button></div>
+                <div id="b5" style="display:none"><button id="reset4" class="button" onclick="toreset4()">RESET</button></div>
+            </div>
+        </div> 
+        
+     
+    </div>
+    
+
+        <!-- footer -->
+        <footer class="footer">
+            <span class="footer-text">© 2025 Virtual Labs, IIT Roorkee</span>
+        </footer>
+    </div>
+      
+   
+
+        <script>
+            function entropyf(){
+                let temp=document.getElementById("forformule")
+                temp.innerHTML=`<div style="font-weight: bold;  font-size: 25px; ">H(D) = - 
+                                    <math style="font-weight: bold; font-size: 25px; ">
+                                        <munderover class="munderover">
+                                            <mo> ∑</mo>
+                <mn> i=1 </mn>
+                <mn> n </mn>
+            </munderover>
+            <mrow>
+                <msub>
+                    <mi>p</mi>
+                    <mn>i</mn>
+                </msub>
+                <msub>
+                    <mi>log</mi>
+                    <mn>2</mn>
+                </msub>
+                <msub>
+                    <mi>(p</mi>
+                    <mn>i</mn>
+                </msub>
+                <mi>)</mi>
+            </mrow>
+                                        
+                                    </math> 
+                                </div>  <br>
+                                <div style=" padding-left: 10px; font-size: medium; ">
+                                    where,<br>
+                                    <b>p<sub>i</sub></b> = The proportion of the instances of class x in a set.<br>
+                                    <b>n</b> = total number of records in the dataset.
+                                </div>`
+   
+            }
+            function gainf(){
+                let temp=document.getElementById("forformule")
+                temp.innerHTML=`<div style="font-weight: bold;  font-size: 25px; ">Information Gain(D, A) = <math style="font-weight: bold; font-size: 25px; ">
+        
+                    <mi>H(D)</mi>
+            <mo>-</mo>
+            <munderover class="munderover">
+                <mo>∑</mo>
+                <mn> i=1</mn>
+                <mn> V</mn>
+            </munderover>
+            <mrow>
+                <mfrac>
+                    <mrow>
+                        <msub>
+                            <mi>∣D</mi>
+                            <mn>v</mn>
+                        </msub>
+                        <mi>∣</mi>
+                    </mrow>
+
+                    <msup>
+                        <mi>∣D∣</mi>
+                    </msup>
+                </mfrac>
+                <mo></mo>
+                
+                    <mi>H(Dᵥ)</mi>
+                    
+               
+            </mrow>
+      
+    </math> </div><br>
+    <div style=" padding-left: 10px; font-size: medium; ">
+    where,<br>
+    <b>H(D)</b> = Entropy of the whole dataset (D).<br>
+    <b>Dᵥ</b> = is the subset of D for which attribute A has value v.<br>
+    <b>H(Dᵥ)</b> = Entropy of the subset of D for which attribute A has value v.<br>
+    <b>V</b> = All possible values for attribute A.</div>`
+   
+            }
+
+            function naivebayes(){
+                let temp=document.getElementById("forformule")
+                temp.innerHTML=`<div style="font-weight: bold;  font-size: large; ">P(C|X) = <math style="font-weight: bold; font-size: 25px; ">
+        <mfrac>
+          <mrow>
+            <mn> (P(C) * P(X∣C))
+                </mn>
+          </mrow>
+          <mn>P(X)</mn>
+        </mfrac>
+    </math> </div><br>
+    <div style=" padding-left: 10px; font-size: medium; ">
+        where,<br>
+        <b>P(C∣X)</b> = conditional probability of event or condition C given event or condition X.<br>
+            <b>P(X∣C)</b> =  conditional probability of event or condition X given event or condition C.
+                <b>P(C)</b> = Probability of condition C<br>
+                    <b>P(X)</b> = Probability of condition X</div>`
+        
+            }
+
+        </script>
+         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+          <script src="js/script.js"></script>
+          <script src="js/script1.js"></script>
+          <script src="js/raphael.js"></script>
+          <script src="js/Treant.js"></script>
+        
+      
+       
+        <script>
+         //   localStorage.removeItem('objectToPass')
+
+
+
+const pageAccessedByReload = (
+  (window.performance.navigation && window.performance.navigation.type === 1) ||
+    window.performance
+      .getEntriesByType('navigation')
+      .map((nav) => nav.type)
+      .includes('reload')
+);
+if(pageAccessedByReload==true){
+    window.location.href="styletest.html"
+}
+//         </script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+   
+    </div>
+
+</body>
+
+</html>
