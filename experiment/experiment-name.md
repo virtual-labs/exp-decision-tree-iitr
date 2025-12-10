@@ -1,1 +1,1 @@
-## Experiment name
+## To build and evaluate a Decision Tree using the ID3 algorithm
