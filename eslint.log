@@ -1,0 +1,740 @@
+
+/home/runner/work/exp-decision-tree-iitr/exp-decision-tree-iitr/experiment/simulation/js/Treant.js
+    20:1   warning  Unnecessary semicolon                                                      no-extra-semi
+    40:32  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+    93:26  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   195:50  warning  Unnecessary escape character: \-                                           no-useless-escape
+   438:27  warning  'Raphael' is not defined                                                   no-undef
+  1285:1   warning  Mixed spaces and tabs                                                      no-mixed-spaces-and-tabs
+  1286:1   warning  Mixed spaces and tabs                                                      no-mixed-spaces-and-tabs
+  1287:1   warning  Mixed spaces and tabs                                                      no-mixed-spaces-and-tabs
+  1288:1   warning  Mixed spaces and tabs                                                      no-mixed-spaces-and-tabs
+  1289:1   warning  Mixed spaces and tabs                                                      no-mixed-spaces-and-tabs
+  1290:1   warning  Mixed spaces and tabs                                                      no-mixed-spaces-and-tabs
+  1291:1   warning  Mixed spaces and tabs                                                      no-mixed-spaces-and-tabs
+  1765:17  warning  'oTree' is assigned a value but never used                                 no-unused-vars
+  1843:13  warning  'image' is not defined                                                     no-undef
+  1844:13  warning  'image' is not defined                                                     no-undef
+  1845:30  warning  'image' is not defined                                                     no-undef
+  1918:13  warning  'image' is defined but never used                                          no-unused-vars
+  2041:37  warning  'treeNode' is defined but never used                                       no-unused-vars
+  2041:47  warning  'treeNodeDom' is defined but never used                                    no-unused-vars
+  2042:51  warning  'treeNode' is defined but never used                                       no-unused-vars
+  2042:61  warning  'treeNodeDom' is defined but never used                                    no-unused-vars
+  2042:74  warning  'switchDom' is defined but never used                                      no-unused-vars
+  2043:39  warning  'newTreeNode' is defined but never used                                    no-unused-vars
+  2043:52  warning  'parentTreeNode' is defined but never used                                 no-unused-vars
+  2043:68  warning  'nodeStructure' is defined but never used                                  no-unused-vars
+  2044:40  warning  'parentTreeNode' is defined but never used                                 no-unused-vars
+  2044:56  warning  'nodeStructure' is defined but never used                                  no-unused-vars
+  2045:44  warning  'treeNode' is defined but never used                                       no-unused-vars
+  2045:54  warning  'nodeDbIndex' is defined but never used                                    no-unused-vars
+  2045:67  warning  'containerCenter' is defined but never used                                no-unused-vars
+  2045:84  warning  'treeCenter' is defined but never used                                     no-unused-vars
+  2046:45  warning  'treeNode' is defined but never used                                       no-unused-vars
+  2046:55  warning  'nodeDbIndex' is defined but never used                                    no-unused-vars
+  2046:68  warning  'containerCenter' is defined but never used                                no-unused-vars
+  2046:85  warning  'treeCenter' is defined but never used                                     no-unused-vars
+  2047:50  warning  'treeNode' is defined but never used                                       no-unused-vars
+  2047:60  warning  'bIsCollapsed' is defined but never used                                   no-unused-vars
+  2048:51  warning  'nodeSwitch' is defined but never used                                     no-unused-vars
+  2048:63  warning  'event' is defined but never used                                          no-unused-vars
+  2049:52  warning  'nodeSwitch' is defined but never used                                     no-unused-vars
+  2049:64  warning  'event' is defined but never used                                          no-unused-vars
+  2050:37  warning  'rootTreeNode' is defined but never used                                   no-unused-vars
+  2074:26  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  2079:27  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  2079:62  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+
+/home/runner/work/exp-decision-tree-iitr/exp-decision-tree-iitr/experiment/simulation/js/raphael.js
+  10:23053  error  Parsing error: Deleting local variable in strict mode
+
+/home/runner/work/exp-decision-tree-iitr/exp-decision-tree-iitr/experiment/simulation/js/script.js
+    2:7    warning  'myContainer' is assigned a value but never used        no-unused-vars
+   34:3    warning  'Swal' is not defined                                   no-undef
+   53:10   warning  'populateDataPointsTable' is defined but never used     no-unused-vars
+   69:5    warning  'rl' is not defined                                     no-undef
+   71:5    warning  'des' is not defined                                    no-undef
+   72:25   warning  'rl' is not defined                                     no-undef
+   73:9    warning  'rl' is not defined                                     no-undef
+   73:49   warning  'rl' is not defined                                     no-undef
+   73:96   warning  'rl' is not defined                                     no-undef
+   73:141  warning  'rl' is not defined                                     no-undef
+   73:181  warning  'rl' is not defined                                     no-undef
+   91:9    warning  'des' is not defined                                    no-undef
+   99:9    warning  'des' is not defined                                    no-undef
+  174:7    warning  'g' is not defined                                      no-undef
+  175:7    warning  'tempa' is not defined                                  no-undef
+  176:7    warning  'tempa' is not defined                                  no-undef
+  178:7    warning  'tempa' is not defined                                  no-undef
+  182:7    warning  'g' is not defined                                      no-undef
+  183:7    warning  'tempa' is not defined                                  no-undef
+  184:7    warning  'tempa' is not defined                                  no-undef
+  186:21   warning  'tempa' is not defined                                  no-undef
+  187:16   warning  'tempa' is not defined                                  no-undef
+  188:15   warning  'tempa' is not defined                                  no-undef
+  190:15   warning  'tempa' is not defined                                  no-undef
+  191:22   warning  'tempa' is not defined                                  no-undef
+  198:7    warning  'g' is not defined                                      no-undef
+  202:20   warning  'g' is not defined                                      no-undef
+  207:5    warning  'f' is not defined                                      no-undef
+  208:5    warning  'f' is not defined                                      no-undef
+  209:5    warning  'f' is not defined                                      no-undef
+  225:3    warning  'Swal' is not defined                                   no-undef
+  254:9    warning  'f' is not defined                                      no-undef
+  255:9    warning  'f' is not defined                                      no-undef
+  256:9    warning  'f' is not defined                                      no-undef
+  279:3    warning  'Swal' is not defined                                   no-undef
+  308:9    warning  'f' is not defined                                      no-undef
+  309:9    warning  'f' is not defined                                      no-undef
+  310:9    warning  'f' is not defined                                      no-undef
+  330:5    warning  'Swal' is not defined                                   no-undef
+  352:9    warning  Unnecessary semicolon                                   no-extra-semi
+  359:13   warning  'f' is not defined                                      no-undef
+  360:13   warning  'f' is not defined                                      no-undef
+  361:13   warning  'f' is not defined                                      no-undef
+  380:14   warning  'i' is already defined                                  no-redeclare
+  385:16   warning  'j' is already defined                                  no-redeclare
+  406:10   warning  'updateSerialNumbers' is defined but never used         no-unused-vars
+  428:10   warning  'populateDataPointsTablecon' is defined but never used  no-unused-vars
+  545:9    warning  'f' is not defined                                      no-undef
+  546:9    warning  'f' is not defined                                      no-undef
+  547:9    warning  'f' is not defined                                      no-undef
+  550:5    warning  'Swal' is not defined                                   no-undef
+  572:9    warning  Unnecessary semicolon                                   no-extra-semi
+  574:11   warning  'corpus' is not defined                                 no-undef
+  575:11   warning  'temp' is not defined                                   no-undef
+  576:11   warning  'humd' is not defined                                   no-undef
+  577:11   warning  'wind' is not defined                                   no-undef
+  578:11   warning  'tennist' is not defined                                no-undef
+  579:13   warning  'f' is not defined                                      no-undef
+  580:13   warning  'f' is not defined                                      no-undef
+  581:13   warning  'f' is not defined                                      no-undef
+  595:15   warning  'dataPointsTable' is not defined                        no-undef
+  600:14   warning  'i' is already defined                                  no-redeclare
+  600:25   warning  'tbody' is not defined                                  no-undef
+  602:19   warning  'tbody' is not defined                                  no-undef
+  605:16   warning  'j' is already defined                                  no-redeclare
+  625:3    warning  'rl' is not defined                                     no-undef
+  626:6    warning  'rl' is not defined                                     no-undef
+  626:19   warning  Empty block statement                                   no-empty
+
+/home/runner/work/exp-decision-tree-iitr/exp-decision-tree-iitr/experiment/simulation/js/script1.js
+     2:18   warning  'new_instance_male' is defined but never used    no-unused-vars
+     2:37   warning  'new_instance_female' is defined but never used  no-unused-vars
+    42:5    warning  'likelihood' is assigned a value but never used  no-unused-vars
+    43:5    warning  'thficount' is assigned a value but never used   no-unused-vars
+    55:5    warning  'Swal' is not defined                            no-undef
+    70:10   warning  'alerts2' is defined but never used              no-unused-vars
+    71:5    warning  'Swal' is not defined                            no-undef
+   102:10   warning  'j' is already defined                           no-redeclare
+   115:13   warning  'row' is already defined                         no-redeclare
+   139:10   warning  'i' is already defined                           no-redeclare
+   140:9    warning  'rowData' is already defined                     no-redeclare
+   177:10   warning  'i' is already defined                           no-redeclare
+   178:9    warning  'rowData' is already defined                     no-redeclare
+   215:10   warning  'i' is already defined                           no-redeclare
+   216:9    warning  'rowData' is already defined                     no-redeclare
+   242:10   warning  'i' is already defined                           no-redeclare
+   243:9    warning  'rowData' is already defined                     no-redeclare
+   298:17   warning  'cellt' is already defined                       no-redeclare
+   300:17   warning  'tr' is already defined                          no-redeclare
+   304:17   warning  'cellt' is already defined                       no-redeclare
+   306:17   warning  'tr' is already defined                          no-redeclare
+   317:25   warning  'cellt' is already defined                       no-redeclare
+   319:25   warning  'tr' is already defined                          no-redeclare
+   324:25   warning  'cellt' is already defined                       no-redeclare
+   326:25   warning  'tr' is already defined                          no-redeclare
+   336:25   warning  'cellt' is already defined                       no-redeclare
+   338:25   warning  'tr' is already defined                          no-redeclare
+   342:25   warning  'rowt' is already defined                        no-redeclare
+   343:25   warning  'cellt' is already defined                       no-redeclare
+   345:25   warning  'tr' is already defined                          no-redeclare
+   354:25   warning  'cellt' is already defined                       no-redeclare
+   356:25   warning  'tr' is already defined                          no-redeclare
+   361:25   warning  'rowt' is already defined                        no-redeclare
+   362:25   warning  'cellt' is already defined                       no-redeclare
+   364:25   warning  'tr' is already defined                          no-redeclare
+   376:21   warning  'cellt' is already defined                       no-redeclare
+   378:21   warning  'tr' is already defined                          no-redeclare
+   382:21   warning  'rowt' is already defined                        no-redeclare
+   383:21   warning  'cellt' is already defined                       no-redeclare
+   385:21   warning  'tr' is already defined                          no-redeclare
+   389:21   warning  'rowt' is already defined                        no-redeclare
+   390:21   warning  'cellt' is already defined                       no-redeclare
+   392:21   warning  'tr' is already defined                          no-redeclare
+   403:17   warning  'cellt' is already defined                       no-redeclare
+   405:17   warning  'tr' is already defined                          no-redeclare
+   409:17   warning  'cellt' is already defined                       no-redeclare
+   411:17   warning  'tr' is already defined                          no-redeclare
+   415:17   warning  'cellt' is already defined                       no-redeclare
+   417:17   warning  'tr' is already defined                          no-redeclare
+   431:25   warning  'cellt' is already defined                       no-redeclare
+   433:25   warning  'tr' is already defined                          no-redeclare
+   437:25   warning  'rowt' is already defined                        no-redeclare
+   438:25   warning  'cellt' is already defined                       no-redeclare
+   440:25   warning  'tr' is already defined                          no-redeclare
+   448:17   warning  'countss' is already defined                     no-redeclare
+   452:25   warning  'cellt' is already defined                       no-redeclare
+   454:25   warning  'tr' is already defined                          no-redeclare
+   458:25   warning  'rowt' is already defined                        no-redeclare
+   459:25   warning  'cellt' is already defined                       no-redeclare
+   461:25   warning  'tr' is already defined                          no-redeclare
+   468:17   warning  'countss' is already defined                     no-redeclare
+   472:25   warning  'cellt' is already defined                       no-redeclare
+   474:25   warning  'tr' is already defined                          no-redeclare
+   479:25   warning  'rowt' is already defined                        no-redeclare
+   480:25   warning  'cellt' is already defined                       no-redeclare
+   482:25   warning  'tr' is already defined                          no-redeclare
+   491:13   warning  'x' is already defined                           no-redeclare
+   492:13   warning  'countss' is already defined                     no-redeclare
+   497:21   warning  'cellt' is already defined                       no-redeclare
+   499:21   warning  'tr' is already defined                          no-redeclare
+   503:21   warning  'rowt' is already defined                        no-redeclare
+   504:21   warning  'cellt' is already defined                       no-redeclare
+   506:21   warning  'tr' is already defined                          no-redeclare
+   510:21   warning  'rowt' is already defined                        no-redeclare
+   511:21   warning  'cellt' is already defined                       no-redeclare
+   513:21   warning  'tr' is already defined                          no-redeclare
+   523:17   warning  'cellt' is already defined                       no-redeclare
+   525:17   warning  'tr' is already defined                          no-redeclare
+   529:17   warning  'cellt' is already defined                       no-redeclare
+   531:17   warning  'tr' is already defined                          no-redeclare
+   538:13   warning  'x' is already defined                           no-redeclare
+   539:13   warning  'countss' is already defined                     no-redeclare
+   544:21   warning  'cellt' is already defined                       no-redeclare
+   546:21   warning  'tr' is already defined                          no-redeclare
+   550:21   warning  'rowt' is already defined                        no-redeclare
+   551:21   warning  'cellt' is already defined                       no-redeclare
+   553:21   warning  'tr' is already defined                          no-redeclare
+   563:17   warning  'cellt' is already defined                       no-redeclare
+   565:17   warning  'tr' is already defined                          no-redeclare
+   569:17   warning  'cellt' is already defined                       no-redeclare
+   571:17   warning  'tr' is already defined                          no-redeclare
+   578:13   warning  'x' is already defined                           no-redeclare
+   579:13   warning  'countss' is already defined                     no-redeclare
+   584:21   warning  'cellt' is already defined                       no-redeclare
+   586:21   warning  'tr' is already defined                          no-redeclare
+   590:21   warning  'rowt' is already defined                        no-redeclare
+   591:21   warning  'cellt' is already defined                       no-redeclare
+   593:21   warning  'tr' is already defined                          no-redeclare
+   656:25   warning  'rowt' is already defined                        no-redeclare
+   670:25   warning  'rowt' is already defined                        no-redeclare
+   686:21   warning  'rowt' is already defined                        no-redeclare
+   691:21   warning  'rowt' is already defined                        no-redeclare
+   728:25   warning  'rowt' is already defined                        no-redeclare
+   737:17   warning  'countss' is already defined                     no-redeclare
+   745:25   warning  'rowt' is already defined                        no-redeclare
+   753:17   warning  'countss' is already defined                     no-redeclare
+   762:25   warning  'rowt' is already defined                        no-redeclare
+   772:13   warning  'x' is already defined                           no-redeclare
+   773:13   warning  'countss' is already defined                     no-redeclare
+   782:21   warning  'rowt' is already defined                        no-redeclare
+   788:21   warning  'rowt' is already defined                        no-redeclare
+   810:13   warning  'x' is already defined                           no-redeclare
+   811:13   warning  'countss' is already defined                     no-redeclare
+   820:21   warning  'rowt' is already defined                        no-redeclare
+   842:13   warning  'x' is already defined                           no-redeclare
+   843:13   warning  'countss' is already defined                     no-redeclare
+   852:21   warning  'rowt' is already defined                        no-redeclare
+   868:5    warning  'addlike' is assigned a value but never used     no-unused-vars
+   919:5    warning  'Swal' is not defined                            no-undef
+   979:5    warning  'Swal' is not defined                            no-undef
+  1026:5    warning  'Swal' is not defined                            no-undef
+  1083:5    warning  'Swal' is not defined                            no-undef
+  1147:5    warning  'Swal' is not defined                            no-undef
+  1191:5    warning  'Swal' is not defined                            no-undef
+  1243:5    warning  'Swal' is not defined                            no-undef
+  1303:5    warning  'Swal' is not defined                            no-undef
+  1326:13   warning  'title' is not defined                           no-undef
+  1327:13   warning  'html' is not defined                            no-undef
+  1332:13   warning  'title' is not defined                           no-undef
+  1333:13   warning  'html' is not defined                            no-undef
+  1338:9    warning  'Swal' is not defined                            no-undef
+  1340:19   warning  'html' is not defined                            no-undef
+  1341:20   warning  'title' is not defined                           no-undef
+  1407:13   warning  'title' is not defined                           no-undef
+  1408:13   warning  'html' is not defined                            no-undef
+  1413:13   warning  'title' is not defined                           no-undef
+  1414:13   warning  'html' is not defined                            no-undef
+  1419:9    warning  'Swal' is not defined                            no-undef
+  1421:19   warning  'html' is not defined                            no-undef
+  1422:20   warning  'title' is not defined                           no-undef
+  1459:18   warning  'i' is already defined                           no-redeclare
+  1480:13   warning  'title' is not defined                           no-undef
+  1481:13   warning  'html' is not defined                            no-undef
+  1486:13   warning  'title' is not defined                           no-undef
+  1487:13   warning  'html' is not defined                            no-undef
+  1492:9    warning  'Swal' is not defined                            no-undef
+  1494:19   warning  'html' is not defined                            no-undef
+  1495:20   warning  'title' is not defined                           no-undef
+  1529:18   warning  'i' is already defined                           no-redeclare
+  1550:13   warning  'title' is not defined                           no-undef
+  1551:13   warning  'html' is not defined                            no-undef
+  1556:13   warning  'title' is not defined                           no-undef
+  1557:13   warning  'html' is not defined                            no-undef
+  1562:9    warning  'Swal' is not defined                            no-undef
+  1564:19   warning  'html' is not defined                            no-undef
+  1565:20   warning  'title' is not defined                           no-undef
+  1605:18   warning  'i' is already defined                           no-redeclare
+  1629:13   warning  'title' is not defined                           no-undef
+  1630:13   warning  'html' is not defined                            no-undef
+  1635:13   warning  'title' is not defined                           no-undef
+  1636:13   warning  'html' is not defined                            no-undef
+  1641:9    warning  'Swal' is not defined                            no-undef
+  1643:19   warning  'html' is not defined                            no-undef
+  1644:20   warning  'title' is not defined                           no-undef
+  1675:18   warning  'i' is already defined                           no-redeclare
+  1700:13   warning  'title' is not defined                           no-undef
+  1701:13   warning  'html' is not defined                            no-undef
+  1706:13   warning  'title' is not defined                           no-undef
+  1707:13   warning  'html' is not defined                            no-undef
+  1712:9    warning  'Swal' is not defined                            no-undef
+  1714:19   warning  'html' is not defined                            no-undef
+  1715:20   warning  'title' is not defined                           no-undef
+  1745:18   warning  'i' is already defined                           no-redeclare
+  1767:13   warning  'title' is not defined                           no-undef
+  1768:13   warning  'html' is not defined                            no-undef
+  1773:13   warning  'title' is not defined                           no-undef
+  1774:13   warning  'html' is not defined                            no-undef
+  1779:9    warning  'Swal' is not defined                            no-undef
+  1781:19   warning  'html' is not defined                            no-undef
+  1782:20   warning  'title' is not defined                           no-undef
+  1815:18   warning  'i' is already defined                           no-redeclare
+  1837:13   warning  'title' is not defined                           no-undef
+  1838:13   warning  'html' is not defined                            no-undef
+  1843:13   warning  'title' is not defined                           no-undef
+  1844:13   warning  'html' is not defined                            no-undef
+  1849:9    warning  'Swal' is not defined                            no-undef
+  1851:19   warning  'html' is not defined                            no-undef
+  1852:20   warning  'title' is not defined                           no-undef
+  1881:18   warning  'i' is already defined                           no-redeclare
+  1904:13   warning  'title' is not defined                           no-undef
+  1905:13   warning  'html' is not defined                            no-undef
+  1910:13   warning  'title' is not defined                           no-undef
+  1911:13   warning  'html' is not defined                            no-undef
+  1916:9    warning  'Swal' is not defined                            no-undef
+  1918:19   warning  'html' is not defined                            no-undef
+  1919:20   warning  'title' is not defined                           no-undef
+  1956:18   warning  'i' is already defined                           no-redeclare
+  1978:13   warning  'title' is not defined                           no-undef
+  1979:13   warning  'html' is not defined                            no-undef
+  1984:13   warning  'title' is not defined                           no-undef
+  1985:13   warning  'html' is not defined                            no-undef
+  1990:9    warning  'Swal' is not defined                            no-undef
+  1992:19   warning  'html' is not defined                            no-undef
+  1993:20   warning  'title' is not defined                           no-undef
+  2026:18   warning  'i' is already defined                           no-redeclare
+  2079:21   warning  'z' is not defined                               no-undef
+  2082:21   warning  'z' is not defined                               no-undef
+  2085:21   warning  'z' is not defined                               no-undef
+  2086:21   warning  'z' is not defined                               no-undef
+  2086:25   warning  'z' is not defined                               no-undef
+  2088:32   warning  'z' is not defined                               no-undef
+  2089:70   warning  'z' is not defined                               no-undef
+  2132:21   warning  'z' is not defined                               no-undef
+  2135:21   warning  'z' is not defined                               no-undef
+  2138:21   warning  'z' is not defined                               no-undef
+  2139:21   warning  'z' is not defined                               no-undef
+  2139:25   warning  'z' is not defined                               no-undef
+  2142:40   warning  'z' is not defined                               no-undef
+  2145:93   warning  'z' is not defined                               no-undef
+  2195:21   warning  'z' is not defined                               no-undef
+  2198:21   warning  'z' is not defined                               no-undef
+  2201:21   warning  'z' is not defined                               no-undef
+  2202:21   warning  'z' is not defined                               no-undef
+  2202:25   warning  'z' is not defined                               no-undef
+  2205:40   warning  'z' is not defined                               no-undef
+  2208:96   warning  'z' is not defined                               no-undef
+  2255:21   warning  'z' is not defined                               no-undef
+  2258:21   warning  'z' is not defined                               no-undef
+  2261:21   warning  'z' is not defined                               no-undef
+  2262:21   warning  'z' is not defined                               no-undef
+  2262:25   warning  'z' is not defined                               no-undef
+  2264:40   warning  'z' is not defined                               no-undef
+  2267:92   warning  'z' is not defined                               no-undef
+  2309:21   warning  'z' is not defined                               no-undef
+  2312:21   warning  'z' is not defined                               no-undef
+  2315:21   warning  'z' is not defined                               no-undef
+  2316:21   warning  'z' is not defined                               no-undef
+  2316:25   warning  'z' is not defined                               no-undef
+  2318:40   warning  'z' is not defined                               no-undef
+  2320:91   warning  'z' is not defined                               no-undef
+  2367:25   warning  'z' is not defined                               no-undef
+  2370:25   warning  'z' is not defined                               no-undef
+  2373:25   warning  'z' is not defined                               no-undef
+  2374:25   warning  'z' is not defined                               no-undef
+  2374:29   warning  'z' is not defined                               no-undef
+  2377:44   warning  'z' is not defined                               no-undef
+  2380:96   warning  'z' is not defined                               no-undef
+  2426:21   warning  'z' is not defined                               no-undef
+  2429:21   warning  'z' is not defined                               no-undef
+  2432:21   warning  'z' is not defined                               no-undef
+  2433:21   warning  'z' is not defined                               no-undef
+  2433:25   warning  'z' is not defined                               no-undef
+  2435:40   warning  'z' is not defined                               no-undef
+  2437:92   warning  'z' is not defined                               no-undef
+  2476:21   warning  'z' is not defined                               no-undef
+  2479:21   warning  'z' is not defined                               no-undef
+  2482:21   warning  'z' is not defined                               no-undef
+  2483:21   warning  'z' is not defined                               no-undef
+  2483:25   warning  'z' is not defined                               no-undef
+  2485:40   warning  'z' is not defined                               no-undef
+  2487:92   warning  'z' is not defined                               no-undef
+  2531:21   warning  'z' is not defined                               no-undef
+  2534:21   warning  'z' is not defined                               no-undef
+  2537:21   warning  'z' is not defined                               no-undef
+  2538:21   warning  'z' is not defined                               no-undef
+  2538:25   warning  'z' is not defined                               no-undef
+  2540:40   warning  'z' is not defined                               no-undef
+  2542:94   warning  'z' is not defined                               no-undef
+  2583:21   warning  'z' is not defined                               no-undef
+  2586:21   warning  'z' is not defined                               no-undef
+  2589:21   warning  'z' is not defined                               no-undef
+  2590:21   warning  'z' is not defined                               no-undef
+  2590:25   warning  'z' is not defined                               no-undef
+  2592:40   warning  'z' is not defined                               no-undef
+  2594:92   warning  'z' is not defined                               no-undef
+  2642:21   warning  'z' is not defined                               no-undef
+  2645:21   warning  'z' is not defined                               no-undef
+  2648:21   warning  'z' is not defined                               no-undef
+  2649:21   warning  'z' is not defined                               no-undef
+  2649:25   warning  'z' is not defined                               no-undef
+  2651:40   warning  'z' is not defined                               no-undef
+  2653:94   warning  'z' is not defined                               no-undef
+  2675:22   warning  'i' is already defined                           no-redeclare
+  2699:5    warning  'j' is already defined                           no-redeclare
+  2702:16   warning  'submitIGValue' is defined but never used        no-unused-vars
+  2736:25   warning  'res' is not defined                             no-undef
+  2737:25   warning  'res' is not defined                             no-undef
+  2737:31   warning  'res' is not defined                             no-undef
+  2738:93   warning  'res' is not defined                             no-undef
+  2751:25   warning  'res' is not defined                             no-undef
+  2752:25   warning  'res' is not defined                             no-undef
+  2752:31   warning  'res' is not defined                             no-undef
+  2753:93   warning  'res' is not defined                             no-undef
+  2766:25   warning  'res' is not defined                             no-undef
+  2767:25   warning  'res' is not defined                             no-undef
+  2767:31   warning  'res' is not defined                             no-undef
+  2768:93   warning  'res' is not defined                             no-undef
+  2790:21   warning  'res' is not defined                             no-undef
+  2800:25   warning  'res' is not defined                             no-undef
+  2801:25   warning  'res' is not defined                             no-undef
+  2801:31   warning  'res' is not defined                             no-undef
+  2803:93   warning  'res' is not defined                             no-undef
+  2816:25   warning  'res' is not defined                             no-undef
+  2817:25   warning  'res' is not defined                             no-undef
+  2817:31   warning  'res' is not defined                             no-undef
+  2819:93   warning  'res' is not defined                             no-undef
+  2833:25   warning  'res' is not defined                             no-undef
+  2834:25   warning  'res' is not defined                             no-undef
+  2834:31   warning  'res' is not defined                             no-undef
+  2836:93   warning  'res' is not defined                             no-undef
+  2857:21   warning  'res' is not defined                             no-undef
+  2867:21   warning  'res' is not defined                             no-undef
+  2868:21   warning  'res' is not defined                             no-undef
+  2868:27   warning  'res' is not defined                             no-undef
+  2869:33   warning  'res' is not defined                             no-undef
+  2870:89   warning  'res' is not defined                             no-undef
+  2879:29   warning  'res' is not defined                             no-undef
+  2943:13   warning  'h1' is not defined                              no-undef
+  2966:13   warning  'cell0' is already defined                       no-redeclare
+  2968:13   warning  'cell1' is already defined                       no-redeclare
+  2970:13   warning  'cell2' is already defined                       no-redeclare
+  2984:25   warning  'res' is not defined                             no-undef
+  2985:25   warning  'res' is not defined                             no-undef
+  2985:31   warning  'res' is not defined                             no-undef
+  2987:92   warning  'res' is not defined                             no-undef
+  3000:25   warning  'res' is not defined                             no-undef
+  3001:25   warning  'res' is not defined                             no-undef
+  3001:31   warning  'res' is not defined                             no-undef
+  3003:92   warning  'res' is not defined                             no-undef
+  3016:25   warning  'res' is not defined                             no-undef
+  3017:25   warning  'res' is not defined                             no-undef
+  3017:31   warning  'res' is not defined                             no-undef
+  3019:92   warning  'res' is not defined                             no-undef
+  3039:21   warning  'res' is not defined                             no-undef
+  3049:25   warning  'res' is not defined                             no-undef
+  3050:25   warning  'res' is not defined                             no-undef
+  3050:31   warning  'res' is not defined                             no-undef
+  3051:92   warning  'res' is not defined                             no-undef
+  3064:25   warning  'res' is not defined                             no-undef
+  3065:25   warning  'res' is not defined                             no-undef
+  3065:31   warning  'res' is not defined                             no-undef
+  3066:92   warning  'res' is not defined                             no-undef
+  3080:25   warning  'res' is not defined                             no-undef
+  3081:25   warning  'res' is not defined                             no-undef
+  3081:31   warning  'res' is not defined                             no-undef
+  3082:92   warning  'res' is not defined                             no-undef
+  3103:21   warning  'res' is not defined                             no-undef
+  3112:21   warning  'res' is not defined                             no-undef
+  3113:21   warning  'res' is not defined                             no-undef
+  3113:27   warning  'res' is not defined                             no-undef
+  3114:88   warning  'res' is not defined                             no-undef
+  3134:21   warning  'res' is not defined                             no-undef
+  3161:13   warning  'row' is already defined                         no-redeclare
+  3162:13   warning  'cell0' is already defined                       no-redeclare
+  3164:13   warning  'cell1' is already defined                       no-redeclare
+  3166:13   warning  'cell2' is already defined                       no-redeclare
+  3169:13   warning  'row2' is already defined                        no-redeclare
+  3170:13   warning  'cell0' is already defined                       no-redeclare
+  3172:13   warning  'cell1' is already defined                       no-redeclare
+  3174:13   warning  'cell2' is already defined                       no-redeclare
+  3189:25   warning  'res' is not defined                             no-undef
+  3190:25   warning  'res' is not defined                             no-undef
+  3190:31   warning  'res' is not defined                             no-undef
+  3191:92   warning  'res' is not defined                             no-undef
+  3205:25   warning  'res' is not defined                             no-undef
+  3206:25   warning  'res' is not defined                             no-undef
+  3206:31   warning  'res' is not defined                             no-undef
+  3208:92   warning  'res' is not defined                             no-undef
+  3229:21   warning  'res' is not defined                             no-undef
+  3238:21   warning  'res' is not defined                             no-undef
+  3239:21   warning  'res' is not defined                             no-undef
+  3239:27   warning  'res' is not defined                             no-undef
+  3241:88   warning  'res' is not defined                             no-undef
+  3261:21   warning  'res' is not defined                             no-undef
+  3286:13   warning  'row' is already defined                         no-redeclare
+  3287:13   warning  'cell0' is already defined                       no-redeclare
+  3289:13   warning  'cell1' is already defined                       no-redeclare
+  3291:13   warning  'cell2' is already defined                       no-redeclare
+  3294:13   warning  'row2' is already defined                        no-redeclare
+  3295:13   warning  'cell0' is already defined                       no-redeclare
+  3297:13   warning  'cell1' is already defined                       no-redeclare
+  3299:13   warning  'cell2' is already defined                       no-redeclare
+  3313:25   warning  'res' is not defined                             no-undef
+  3314:25   warning  'res' is not defined                             no-undef
+  3314:31   warning  'res' is not defined                             no-undef
+  3316:93   warning  'res' is not defined                             no-undef
+  3330:25   warning  'res' is not defined                             no-undef
+  3331:25   warning  'res' is not defined                             no-undef
+  3331:31   warning  'res' is not defined                             no-undef
+  3333:93   warning  'res' is not defined                             no-undef
+  3351:21   warning  'res' is not defined                             no-undef
+  3360:21   warning  'res' is not defined                             no-undef
+  3361:21   warning  'res' is not defined                             no-undef
+  3361:27   warning  'res' is not defined                             no-undef
+  3362:88   warning  'res' is not defined                             no-undef
+  3379:21   warning  'res' is not defined                             no-undef
+  3387:13   warning  'row' is already defined                         no-redeclare
+  3388:13   warning  'cell0' is already defined                       no-redeclare
+  3390:13   warning  'cell1' is already defined                       no-redeclare
+  3392:13   warning  'cell2' is already defined                       no-redeclare
+  3395:13   warning  'row2' is already defined                        no-redeclare
+  3396:13   warning  'cell0' is already defined                       no-redeclare
+  3398:13   warning  'cell1' is already defined                       no-redeclare
+  3400:13   warning  'cell2' is already defined                       no-redeclare
+  3413:13   warning  'Swal' is not defined                            no-undef
+  3425:25   warning  'myContainer' is not defined                     no-undef
+  3428:44   warning  'myContainer' is not defined                     no-undef
+  3429:45   warning  'myContainer' is not defined                     no-undef
+  3454:13   warning  'Swal' is not defined                            no-undef
+  3576:10   warning  'tonextIG2' is defined but never used            no-unused-vars
+  3619:10   warning  'tonextIG3' is defined but never used            no-unused-vars
+  3708:9    warning  'v1' is not defined                              no-undef
+  3709:9    warning  'v1' is not defined                              no-undef
+  3714:13   warning  'table' is already defined                       no-redeclare
+  3721:13   warning  'newRow1' is already defined                     no-redeclare
+  3722:9    warning  'v1' is not defined                              no-undef
+  3723:9    warning  'v1' is not defined                              no-undef
+  3727:9    warning  'v2' is not defined                              no-undef
+  3728:9    warning  'v2' is not defined                              no-undef
+  3732:13   warning  'table' is already defined                       no-redeclare
+  3739:13   warning  'newRow1' is already defined                     no-redeclare
+  3740:9    warning  'v1' is not defined                              no-undef
+  3741:9    warning  'v1' is not defined                              no-undef
+  3744:13   warning  'newRow2' is already defined                     no-redeclare
+  3745:9    warning  'v2' is not defined                              no-undef
+  3746:9    warning  'v2' is not defined                              no-undef
+  3750:9    warning  'v3' is not defined                              no-undef
+  3751:9    warning  'v3' is not defined                              no-undef
+  3826:9    warning  'temp7' is assigned a value but never used       no-unused-vars
+  3833:10   warning  'toPlot' is defined but never used               no-unused-vars
+  3840:10   warning  'toreset2_2' is defined but never used           no-unused-vars
+  3883:94   warning  'rowii' is not defined                           no-undef
+  3883:133  warning  'rowii' is not defined                           no-undef
+  3883:168  warning  'rowii' is not defined                           no-undef
+  3883:200  warning  'rowii' is not defined                           no-undef
+  3886:66   warning  'rowii' is not defined                           no-undef
+  3886:127  warning  'rowii' is not defined                           no-undef
+  3886:169  warning  'rowii' is not defined                           no-undef
+  3886:201  warning  'rowii' is not defined                           no-undef
+  3889:66   warning  'rowii' is not defined                           no-undef
+  3889:98   warning  'rowii' is not defined                           no-undef
+  3889:162  warning  'rowii' is not defined                           no-undef
+  3889:202  warning  'rowii' is not defined                           no-undef
+  3983:10   warning  'toreset' is defined but never used              no-unused-vars
+  4042:10   warning  'toreset_2' is defined but never used            no-unused-vars
+  4082:10   warning  'toreset3' is defined but never used             no-unused-vars
+  4135:10   warning  'addEntropyValue' is defined but never used      no-unused-vars
+  4149:10   warning  'addEntropyTable' is defined but never used      no-unused-vars
+  4162:10   warning  'addtotalset' is defined but never used          no-unused-vars
+  4172:10   warning  'addIGValue' is defined but never used           no-unused-vars
+  4177:10   warning  'adddataset' is defined but never used           no-unused-vars
+  4471:9    warning  'Treant' is not defined                          no-undef
+  4515:9    warning  'Treant' is not defined                          no-undef
+  4569:9    warning  'Treant' is not defined                          no-undef
+  4597:60   warning  'parentChildNumber' is defined but never used    no-unused-vars
+  4643:29   warning  'Treant' is not defined                          no-undef
+  4693:60   warning  'parentChildNumber' is defined but never used    no-unused-vars
+  4746:29   warning  'Treant' is not defined                          no-undef
+  4800:60   warning  'parentChildNumber' is defined but never used    no-unused-vars
+  4863:29   warning  'Treant' is not defined                          no-undef
+  4889:9    warning  'Treant' is not defined                          no-undef
+  4967:44   warning  Empty block statement                            no-empty
+  5022:17   warning  'Treant' is not defined                          no-undef
+  5038:21   warning  'Treant' is not defined                          no-undef
+  5053:21   warning  'Treant' is not defined                          no-undef
+  5086:9    warning  'Treant' is not defined                          no-undef
+  5117:13   warning  'row' is already defined                         no-redeclare
+  5118:13   warning  'cells' is already defined                       no-redeclare
+  5130:13   warning  'row' is already defined                         no-redeclare
+  5131:13   warning  'cells' is already defined                       no-redeclare
+  5243:14   warning  'a' is not defined                               no-undef
+  5243:21   warning  'a' is not defined                               no-undef
+  5243:38   warning  'a' is not defined                               no-undef
+  5244:17   warning  'rowData' is already defined                     no-redeclare
+  5245:31   warning  'a' is not defined                               no-undef
+  5246:21   warning  'a' is not defined                               no-undef
+  5248:36   warning  'a' is not defined                               no-undef
+  5249:21   warning  'a' is not defined                               no-undef
+  5251:36   warning  'a' is not defined                               no-undef
+  5252:21   warning  'a' is not defined                               no-undef
+  5260:22   warning  'i' is already defined                           no-redeclare
+  5261:21   warning  'rowData' is already defined                     no-redeclare
+  5302:22   warning  'i' is already defined                           no-redeclare
+  5303:21   warning  'rowData' is already defined                     no-redeclare
+  5332:22   warning  'i' is already defined                           no-redeclare
+  5333:21   warning  'rowData' is already defined                     no-redeclare
+  5362:13   warning  'x' is already defined                           no-redeclare
+  5362:24   warning  'y' is already defined                           no-redeclare
+  5362:35   warning  'z' is already defined                           no-redeclare
+  5363:14   warning  'a' is not defined                               no-undef
+  5363:21   warning  'a' is not defined                               no-undef
+  5363:38   warning  'a' is not defined                               no-undef
+  5364:17   warning  'rowData' is already defined                     no-redeclare
+  5365:31   warning  'a' is not defined                               no-undef
+  5366:21   warning  'a' is not defined                               no-undef
+  5368:36   warning  'a' is not defined                               no-undef
+  5369:21   warning  'a' is not defined                               no-undef
+  5371:36   warning  'a' is not defined                               no-undef
+  5372:21   warning  'a' is not defined                               no-undef
+  5378:22   warning  'i' is already defined                           no-redeclare
+  5379:21   warning  'rowData' is already defined                     no-redeclare
+  5419:22   warning  'i' is already defined                           no-redeclare
+  5420:21   warning  'rowData' is already defined                     no-redeclare
+  5448:22   warning  'i' is already defined                           no-redeclare
+  5449:21   warning  'rowData' is already defined                     no-redeclare
+  5477:13   warning  'x' is already defined                           no-redeclare
+  5477:24   warning  'y' is already defined                           no-redeclare
+  5477:35   warning  'z' is already defined                           no-redeclare
+  5478:14   warning  'a' is not defined                               no-undef
+  5478:21   warning  'a' is not defined                               no-undef
+  5478:38   warning  'a' is not defined                               no-undef
+  5479:17   warning  'rowData' is already defined                     no-redeclare
+  5480:31   warning  'a' is not defined                               no-undef
+  5481:21   warning  'a' is not defined                               no-undef
+  5483:36   warning  'a' is not defined                               no-undef
+  5484:21   warning  'a' is not defined                               no-undef
+  5486:36   warning  'a' is not defined                               no-undef
+  5487:21   warning  'a' is not defined                               no-undef
+  5494:22   warning  'i' is already defined                           no-redeclare
+  5495:21   warning  'rowData' is already defined                     no-redeclare
+  5535:22   warning  'i' is already defined                           no-redeclare
+  5536:21   warning  'rowData' is already defined                     no-redeclare
+  5577:22   warning  'i' is already defined                           no-redeclare
+  5578:21   warning  'rowData' is already defined                     no-redeclare
+  5607:13   warning  'x' is already defined                           no-redeclare
+  5607:24   warning  'y' is already defined                           no-redeclare
+  5607:35   warning  'z' is already defined                           no-redeclare
+  5608:14   warning  'a' is not defined                               no-undef
+  5608:21   warning  'a' is not defined                               no-undef
+  5608:38   warning  'a' is not defined                               no-undef
+  5609:17   warning  'rowData' is already defined                     no-redeclare
+  5610:31   warning  'a' is not defined                               no-undef
+  5611:21   warning  'a' is not defined                               no-undef
+  5613:36   warning  'a' is not defined                               no-undef
+  5614:21   warning  'a' is not defined                               no-undef
+  5616:36   warning  'a' is not defined                               no-undef
+  5617:21   warning  'a' is not defined                               no-undef
+  5625:22   warning  'i' is already defined                           no-redeclare
+  5626:21   warning  'rowData' is already defined                     no-redeclare
+  5668:22   warning  'i' is already defined                           no-redeclare
+  5669:21   warning  'rowData' is already defined                     no-redeclare
+  5709:22   warning  'i' is already defined                           no-redeclare
+  5710:21   warning  'rowData' is already defined                     no-redeclare
+  5973:21   warning  'c' is not defined                               no-undef
+  5974:21   warning  'c' is not defined                               no-undef
+  5975:21   warning  'c' is not defined                               no-undef
+  5991:21   warning  'c' is not defined                               no-undef
+  5992:21   warning  'c' is not defined                               no-undef
+  5993:21   warning  'c' is not defined                               no-undef
+  5996:25   warning  'rowt' is already defined                        no-redeclare
+  6009:21   warning  'c' is not defined                               no-undef
+  6010:21   warning  'c' is not defined                               no-undef
+  6011:21   warning  'c' is not defined                               no-undef
+  6014:25   warning  'rowt' is already defined                        no-redeclare
+  6029:17   warning  'c' is not defined                               no-undef
+  6030:17   warning  'c' is not defined                               no-undef
+  6031:17   warning  'c' is not defined                               no-undef
+  6034:21   warning  'rowt' is already defined                        no-redeclare
+  6039:21   warning  'rowt' is already defined                        no-redeclare
+  6075:21   warning  'c' is not defined                               no-undef
+  6076:21   warning  'c' is not defined                               no-undef
+  6077:21   warning  'c' is not defined                               no-undef
+  6089:17   warning  'countss' is already defined                     no-redeclare
+  6095:21   warning  'c' is not defined                               no-undef
+  6096:21   warning  'c' is not defined                               no-undef
+  6097:21   warning  'c' is not defined                               no-undef
+  6100:25   warning  'rowt' is already defined                        no-redeclare
+  6108:17   warning  'countss' is already defined                     no-redeclare
+  6114:21   warning  'c' is not defined                               no-undef
+  6115:21   warning  'c' is not defined                               no-undef
+  6116:21   warning  'c' is not defined                               no-undef
+  6120:25   warning  'rowt' is already defined                        no-redeclare
+  6131:13   warning  'y' is already defined                           no-redeclare
+  6132:13   warning  'countss' is already defined                     no-redeclare
+  6139:17   warning  'c' is not defined                               no-undef
+  6140:17   warning  'c' is not defined                               no-undef
+  6141:17   warning  'c' is not defined                               no-undef
+  6144:21   warning  'rowt' is already defined                        no-redeclare
+  6150:21   warning  'rowt' is already defined                        no-redeclare
+  6183:17   warning  'c' is not defined                               no-undef
+  6184:17   warning  'c' is not defined                               no-undef
+  6185:17   warning  'c' is not defined                               no-undef
+  6222:17   warning  'c' is not defined                               no-undef
+  6223:17   warning  'c' is not defined                               no-undef
+  6224:17   warning  'c' is not defined                               no-undef
+  6238:16   warning  'findS' is defined but never used                no-unused-vars
+  6305:10   warning  'findEntropy' is defined but never used          no-unused-vars
+  6470:9    warning  'z' is not defined                               no-undef
+  6472:24   warning  'z' is not defined                               no-undef
+  6474:9    warning  'z' is not defined                               no-undef
+  6475:9    warning  'z' is not defined                               no-undef
+  6475:13   warning  'z' is not defined                               no-undef
+  6477:30   warning  'z' is not defined                               no-undef
+  6483:16   warning  'findgain' is defined but never used             no-unused-vars
+  6492:9    warning  'span' is not defined                            no-undef
+  6494:32   warning  'span' is not defined                            no-undef
+  6495:9    warning  'data' is not defined                            no-undef
+  6496:32   warning  'data' is not defined                            no-undef
+  6497:13   warning  'data' is not defined                            no-undef
+  6500:18   warning  'data' is not defined                            no-undef
+  6503:18   warning  'data' is not defined                            no-undef
+  6506:18   warning  'data' is not defined                            no-undef
+  6509:17   warning  'span' is not defined                            no-undef
+  6521:9    warning  'Swal' is not defined                            no-undef
+  6549:9    warning  'Swal' is not defined                            no-undef
+  6685:5    warning  'z' is not defined                               no-undef
+  6686:13   warning  'z' is not defined                               no-undef
+  6687:31   warning  'z' is not defined                               no-undef
+  6698:5    warning  'z' is not defined                               no-undef
+  6699:13   warning  'z' is not defined                               no-undef
+  6700:31   warning  'z' is not defined                               no-undef
+  6713:5    warning  'res' is not defined                             no-undef
+  6714:13   warning  'res' is not defined                             no-undef
+  6715:31   warning  'res' is not defined                             no-undef
+
+✖ 728 problems (1 error, 727 warnings)
+  0 errors and 3 warnings potentially fixable with the `--fix` option.
+

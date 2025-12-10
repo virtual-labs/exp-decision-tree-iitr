@@ -1,0 +1,1 @@
+#### The aim of the experiment is to learn how to built a decision tree using ID3 algorithm.

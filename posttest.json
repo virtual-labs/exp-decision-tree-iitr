@@ -1,0 +1,52 @@
+[
+  {
+    "question": "ID3 algorithm selects the attribute with the ________ information gain for splitting at each node.",
+    "answers": {
+      "a": "Highest",
+      "b": "Lowest",
+      "c": "Medium",
+      "d": "Average"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Which algorithm is commonly used to build decision trees?",
+    "answers": {
+      "a": "K-nearest neighbors",
+      "b": "Naive Bayes",
+      "c": "ID3",
+      "d": "Linear regression"
+    },
+    "correctAnswer": "c"
+  },
+  {
+    "question": "In ID3, the entropy of a set is calculated using which formula?",
+    "answers": {
+      "a": "Entropy(S) = -Σp(x) * log₂(p(x))",
+      "b": "Entropy(S) = -Σp(x) * log₁₀(p(x))",
+      "c": "Entropy(S) = Σp(x) * log₂(p(x))",
+      "d": "Entropy(S) = Σp(x) * log₁₀(p(x))"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Which of the following is not a step in building a decision tree?",
+    "answers": {
+      "a": "Choosing the root node",
+      "b": "Selecting features to split on",
+      "c": "Pruning the tree",
+      "d": "Calculating probabilities for each class"
+    },
+    "correctAnswer": "d"
+  },
+  {
+    "question": "What is the CART algorithm used for in decision trees?",
+    "answers": {
+      "a": "Classifying data",
+      "b": "Regression analysis",
+      "c": "Both classification and regression",
+      "d": "None of the above"
+    },
+    "correctAnswer": "c"
+  }
+]
